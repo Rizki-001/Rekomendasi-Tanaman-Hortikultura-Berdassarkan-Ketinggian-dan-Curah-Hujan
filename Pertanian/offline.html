@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anda Sedang Offline</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .offline-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 90%;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #d9534f; /* A soft red for attention */
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1::before {
+            content: '⚠️'; /* Warning emoji */
+            margin-right: 15px;
+            font-size: 1.2em;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .tip {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 20px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        .tip strong {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="offline-container">
+        <h1>Anda Sedang Offline</h1>
+        <p>Sepertinya Anda tidak terhubung ke internet. Untuk melihat rekomendasi, mohon periksa koneksi internet Anda.</p>
+        <p class="tip">
+            <strong>Tips:</strong>
+            <ul>
+                <li>Pastikan kabel jaringan Anda terpasang dengan benar.</li>
+                <li>Periksa apakah Wi-Fi Anda aktif dan terhubung ke jaringan.</li>
+                <li>Coba mulai ulang router atau modem Anda.</li>
+                <li>Kadang, me-refresh halaman dapat membantu setelah koneksi pulih.</li>
+            </ul>
+        </p>
+    </div>
+</body>
+</html>
